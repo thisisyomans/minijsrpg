@@ -28,26 +28,26 @@ Crafty.c('Actor', {
 
 Crafty.c('Tree', {
 	init: function(){
-		this.requires('Actor, Color, Solid')
+		this.requires('Actor, Color')
 		.color('rgb(20, 125, 40)');
 	},
 });
 
 Crafty.c('Bush', {
 	init: function(){
-		this.requires('Actor, Color, Solid')
+		this.requires('Actor, Color')
 		.color('rgb(20, 185, 40)');
 	},
 });
 
 Crafty.c('PlayerCharacter', {
 	init: function(){
-		this.requires('Actor, Fourway, Color, Collision')
+		this.requires('Actor, Fourway, Color')
 			.fourway(4)
-			.color('rgb(20, 75, 40)')
-			.stopOnSolids();
+			.color('rgb(20, 75, 40)');
+			//.stopOnSolids();
 	},
-
+/*
 	//registers a stop-movement function to be called when this entity hits an entity w/ the "Solid" component
 	stopOnSolids: function(){
 		this.onHit('Solid', this.stopMovement);
@@ -61,5 +61,5 @@ Crafty.c('PlayerCharacter', {
 			this.x -= this._movement.x;
 			this.y -= this._movement.y;
 		}
-	}
+	}*/
 });
