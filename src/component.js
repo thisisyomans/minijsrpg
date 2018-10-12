@@ -47,7 +47,7 @@ Crafty.c('PlayerCharacter', {
 			.color('rgb(20, 75, 40)');
 			//.stopOnSolids();
 	},
-/*
+	/*
 	//registers a stop-movement function to be called when this entity hits an entity w/ the "Solid" component
 	stopOnSolids: function(){
 		this.onHit('Solid', this.stopMovement);
